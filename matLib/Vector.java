@@ -144,8 +144,3 @@ public class Vector extends AbstractVector {
 	}
 }
 
-class DimensionError extends UnsupportedOperationException {
-	DimensionError(String operation){
-		super("Incompatible matrix dimensions in "+operation+".");
-	}
-}
