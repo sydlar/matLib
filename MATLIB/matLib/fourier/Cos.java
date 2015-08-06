@@ -2,7 +2,7 @@ package matLib.fourier;
 
 public class Cos extends AbstractTrig {
 	
-	private static double sqrtZeroPointFive = Math.sqrt(.5);
+	private static double SQRT_OF_ONE_HALF = Math.sqrt(.5);
 
 	public Cos(int n){
 		super(n);
@@ -14,7 +14,7 @@ public class Cos extends AbstractTrig {
 
 	public double get(int i){
 		if (factor == 0)
-			return sqrtZeroPointFive;
+			return SQRT_OF_ONE_HALF;
 		else
 			return Math.cos(factor*i);
 	}
