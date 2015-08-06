@@ -9,9 +9,9 @@ import matLib.Vector;
 public class ImageTest {
 
 //	private static final String FILE = "data/test.png";
-	private static final String FILE = "/home/sydlar/Desktop/IMG_7615.JPG";
+	private static final String FILE = "IMG_7615.JPG";
 
-	private static final int N = 100;
+	private static final int N = 40;
 
 	public static void main(String[] args){
 		
