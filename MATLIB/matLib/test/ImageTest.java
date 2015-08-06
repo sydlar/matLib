@@ -9,7 +9,7 @@ import matLib.Vector;
 public class ImageTest {
 
 //	private static final String FILE = "data/test.png";
-	private static final String FILE = "/home/sydlar/Desktop/anna_og_sindre.png";
+	private static final String FILE = "/home/sydlar/Desktop/IMG_7615.JPG";
 
 	private static final int N = 100;
 
@@ -55,7 +55,7 @@ public class ImageTest {
 
 		//outputImage.trim();
 
-		outputImage.writeToFile("data/outTestUUU");
+		outputImage.writeToFile("imageTestOutput");
 		
 	}
 

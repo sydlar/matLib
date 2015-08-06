@@ -3,7 +3,6 @@ package matLib.images;
 import matLib.AbstractVector;
 import matLib.Vector;
 
-import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -71,7 +70,6 @@ public class Image extends Vector {
 	public static Image getImage(String fileName){
 		int[] dims = new int[2];
 		double[] buffer = Image.readFromFile(fileName,dims);
-		System.out.println(" "+dims[0]+"x"+dims[1]);
 		return new Image(buffer,dims[0],dims[1]);
 	}
 
@@ -103,7 +101,7 @@ public class Image extends Vector {
 	private static final int INTENSITY_SHIFT = 127;
 
 	public static double[] readFromFile(String fileName,int[] dimensions){
-
+		
 		BufferedImage image = null;
 		int width = 0;
 		int height = 0;
